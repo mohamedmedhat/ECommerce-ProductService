@@ -1,20 +1,25 @@
-package com.mohamed.microservice.product.service.model;
+package com.mohamed.microservice.product.service.dto.request;
 
-import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import jakarta.validation.constraints.NotBlank;
 
 import java.math.BigDecimal;
 
-@Document(value = "products")
-@NoArgsConstructor
-@Builder
-public class Product {
-    @Id
+public class CreateProductRequestDto {
+    @NotBlank
     private String id;
+    @NotBlank
     private String name;
+    @NotBlank
     private String description;
+    @NotBlank
     private BigDecimal price;
+
+    public CreateProductRequestDto(String id, String name, String description, BigDecimal price){
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
 
     public String getId() {
         return id;
