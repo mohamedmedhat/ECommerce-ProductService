@@ -1,5 +1,4 @@
 # ECommerce-ProductService
 the service part of the ecommerce microservice app which contain the product functionality
 
-
-![ecommerce](https://github.com/user-attachments/assets/6fc67ee6-95f5-4a19-8b61-6578be054154)
+![ecommerce-product](https://github.com/user-attachments/assets/58e3c8cb-a411-4199-a4b0-d3d69585acae)
